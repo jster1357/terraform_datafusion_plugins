@@ -2,7 +2,7 @@ data "google_client_config" "current" {
 }
 
 provider "cdap" {
-  host  = "https://jtaras2-generalproject-340815-dot-usc1.datafusion.googleusercontent.com/api/"
+  host  = "https://{instance}-{project_id}-dot-usc1.datafusion.googleusercontent.com/api/"
   token = data.google_client_config.current.access_token
 }
 
